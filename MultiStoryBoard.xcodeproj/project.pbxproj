@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		422ED49B1B41CFF100A683E8 /* DeviceEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 422ED49A1B41CFF100A683E8 /* DeviceEnum.swift */; };
 		42673C0A1B4073FB00EE774E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42673C091B4073FB00EE774E /* AppDelegate.swift */; };
 		42673C0C1B4073FB00EE774E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42673C0B1B4073FB00EE774E /* ViewController.swift */; };
 		42673C0F1B4073FB00EE774E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42673C0D1B4073FB00EE774E /* Main.storyboard */; };
@@ -28,6 +29,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		422ED49A1B41CFF100A683E8 /* DeviceEnum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeviceEnum.swift; sourceTree = "<group>"; };
 		42673C041B4073FB00EE774E /* MultiStoryBoard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MultiStoryBoard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		42673C081B4073FB00EE774E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		42673C091B4073FB00EE774E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -82,6 +84,7 @@
 			isa = PBXGroup;
 			children = (
 				42673C091B4073FB00EE774E /* AppDelegate.swift */,
+				422ED49A1B41CFF100A683E8 /* DeviceEnum.swift */,
 				42673C0B1B4073FB00EE774E /* ViewController.swift */,
 				42673C0D1B4073FB00EE774E /* Main.storyboard */,
 				42673C291B4074A200EE774E /* 5S.storyboard */,
@@ -221,6 +224,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				42673C0C1B4073FB00EE774E /* ViewController.swift in Sources */,
+				422ED49B1B41CFF100A683E8 /* DeviceEnum.swift in Sources */,
 				42673C0A1B4073FB00EE774E /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -347,6 +351,7 @@
 				INFOPLIST_FILE = MultiStoryBoard/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -357,6 +362,7 @@
 				INFOPLIST_FILE = MultiStoryBoard/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -413,6 +419,7 @@
 				42673C251B4073FB00EE774E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		42673C261B4073FB00EE774E /* Build configuration list for PBXNativeTarget "MultiStoryBoardTests" */ = {
 			isa = XCConfigurationList;
@@ -421,6 +428,7 @@
 				42673C281B4073FB00EE774E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

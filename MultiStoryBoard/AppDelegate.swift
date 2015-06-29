@@ -27,17 +27,21 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         println("\(UIDevice.currentDevice().description)")
 
         
-        println("\(UIScreen.mainScreen().bounds)")
+        println("\(UIScreen.mainScreen().bounds.size)")
         
-        if CGRect(x: 0, y: 0, width: 13, height: 14) == CGRect(x: 0.0, y: 0.0, width: 13.0, height: 14.0) {
+        if CGSize(width: 12, height: 11) == CGSize(width: 12.0, height: 11.0)  {
             println("equal")
         }
         
-//        self.window = UIWindow(frame: UIScreen.mainScreen().bounds)
-//        let myStoryboard = UIStoryboard(name: "6Plus", bundle: nil)
-//        self.window?.rootViewController = myStoryboard.instantiateInitialViewController() as ViewController
-//        
-//        self.window?.makeKeyAndVisible()
+        let device = DeviceDetection.sizeToDevice(UIScreen.mainScreen().bounds.size)
+        
+        device.desc()
+        
+        self.window = UIWindow(frame: UIScreen.mainScreen().bounds)
+        let myStoryboard = UIStoryboard(name: "6Plus", bundle: nil)
+        self.window?.rootViewController = myStoryboard.instantiateInitialViewController() as ViewController
+        
+        self.window?.makeKeyAndVisible()
         
         
         return true
