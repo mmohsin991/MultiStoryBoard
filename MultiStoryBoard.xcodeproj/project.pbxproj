@@ -16,6 +16,7 @@
 		42673C201B4073FB00EE774E /* MultiStoryBoardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42673C1F1B4073FB00EE774E /* MultiStoryBoardTests.swift */; };
 		42673C2A1B4074A200EE774E /* 5S.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42673C291B4074A200EE774E /* 5S.storyboard */; };
 		42673C2C1B4074AE00EE774E /* 6Plus.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42673C2B1B4074AE00EE774E /* 6Plus.storyboard */; };
+		42E979201B5B70D100363671 /* iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42E9791F1B5B70D100363671 /* iPad.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +43,7 @@
 		42673C1F1B4073FB00EE774E /* MultiStoryBoardTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiStoryBoardTests.swift; sourceTree = "<group>"; };
 		42673C291B4074A200EE774E /* 5S.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = 5S.storyboard; sourceTree = "<group>"; };
 		42673C2B1B4074AE00EE774E /* 6Plus.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = 6Plus.storyboard; sourceTree = "<group>"; };
+		42E9791F1B5B70D100363671 /* iPad.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = iPad.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +91,7 @@
 				42673C0D1B4073FB00EE774E /* Main.storyboard */,
 				42673C291B4074A200EE774E /* 5S.storyboard */,
 				42673C2B1B4074AE00EE774E /* 6Plus.storyboard */,
+				42E9791F1B5B70D100363671 /* iPad.storyboard */,
 				42673C101B4073FB00EE774E /* Images.xcassets */,
 				42673C121B4073FB00EE774E /* LaunchScreen.xib */,
 				42673C071B4073FB00EE774E /* Supporting Files */,
@@ -205,6 +208,7 @@
 				42673C0F1B4073FB00EE774E /* Main.storyboard in Resources */,
 				42673C141B4073FB00EE774E /* LaunchScreen.xib in Resources */,
 				42673C2C1B4074AE00EE774E /* 6Plus.storyboard in Resources */,
+				42E979201B5B70D100363671 /* iPad.storyboard in Resources */,
 				42673C111B4073FB00EE774E /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

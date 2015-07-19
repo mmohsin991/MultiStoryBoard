@@ -29,19 +29,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         println("\(UIScreen.mainScreen().bounds.size)")
         
-        if CGSize(width: 12, height: 11) == CGSize(width: 12.0, height: 11.0)  {
-            println("equal")
-        }
         
-        let device = DeviceDetection.sizeToDevice(UIScreen.mainScreen().bounds.size)
-        
-        device.desc()
-        
-        self.window = UIWindow(frame: UIScreen.mainScreen().bounds)
-        let myStoryboard = UIStoryboard(name: "6Plus", bundle: nil)
-        self.window?.rootViewController = myStoryboard.instantiateInitialViewController() as ViewController
-        
-        self.window?.makeKeyAndVisible()
+
+        self.setStoryboard()
         
         
         return true
@@ -69,6 +59,59 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
 
+    
+    
+    
+    func setStoryboard(){
+        let device = DeviceDetection.sizeToDevice(UIScreen.mainScreen().bounds.size)
+        
+        device.desc()
+        
+        println(self.window?.rootViewController)
+        
+        
+        if DeviceDetection.sizeToDevice(UIScreen.mainScreen().bounds.size) == AppleDevices.iPhone6P{
+            
+            self.window = UIWindow(frame: UIScreen.mainScreen().bounds)
+            let myStoryboard = UIStoryboard(name: "6Plus", bundle: nil)
+            
+            let myNavigatioController = myStoryboard.instantiateInitialViewController() as! UINavigationController
+            let firstVC = myStoryboard.instantiateViewControllerWithIdentifier("ViewController") as! ViewController
+            
+            myNavigatioController.setViewControllers([firstVC], animated: false)
+            self.window?.rootViewController = myNavigatioController
+            self.window?.makeKeyAndVisible()
+            
+        }
+            
+        else if DeviceDetection.sizeToDevice(UIScreen.mainScreen().bounds.size) == AppleDevices.iPhone5{
+            
+            self.window = UIWindow(frame: UIScreen.mainScreen().bounds)
+            let myStoryboard = UIStoryboard(name: "5S", bundle: nil)
+            
+            let myNavigatioController = myStoryboard.instantiateInitialViewController() as! UINavigationController
+            let firstVC = myStoryboard.instantiateViewControllerWithIdentifier("ViewController") as! ViewController
+            
+            myNavigatioController.setViewControllers([firstVC], animated: false)
+            self.window?.rootViewController = myNavigatioController
+            self.window?.makeKeyAndVisible()
+            
+        }
+        
+        else if DeviceDetection.sizeToDevice(UIScreen.mainScreen().bounds.size) == AppleDevices.iPad{
+            
+            self.window = UIWindow(frame: UIScreen.mainScreen().bounds)
+            let myStoryboard = UIStoryboard(name: "iPad", bundle: nil)
+            
+            let myNavigatioController = myStoryboard.instantiateInitialViewController() as! UINavigationController
+            let firstVC = myStoryboard.instantiateViewControllerWithIdentifier("ViewController") as! ViewController
+            
+            myNavigatioController.setViewControllers([firstVC], animated: false)
+            self.window?.rootViewController = myNavigatioController
+            self.window?.makeKeyAndVisible()
+            
+        }
+    }
 
 }
 
